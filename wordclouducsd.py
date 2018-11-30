@@ -8,9 +8,12 @@ import matplotlib.pyplot as plt
 import numpy as np
 from PIL import Image
 
-myReddit = praw.Reddit( client_id = 'bWDF5RWVHmQvBA', client_secret  = 'bVCGihdjs0FPD1DBqKqQU9uwt8E', user_agent = 'Wordcloud', username = 'Satyam19946', password = 'Equinox@123' )
+# u have to enter your own details for the next line.
+myReddit = praw.Reddit( client_id = '', client_secret  = '', user_agent = '', username = '', password = '' )
 
 titles = ""
+
+#u can change the name of the subreddit below.
 ucsd = myReddit.subreddit('UCSD')
 for submission in ucsd.top(limit = 2000):
   titles += submission.title
