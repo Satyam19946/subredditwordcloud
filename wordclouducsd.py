@@ -19,6 +19,7 @@ for submission in ucsd.top(limit = 2000):
   titles += submission.title
   titles += " "
 
+#change the name of the file if you want a different mask, or remove the mask option at line 25 of you do not want a mask. 
 sun_god = np.array(Image.open("sun_god.jpg"))
 titles = titles.lower()
 wordcloud = WordCloud(mask = sun_god).generate(titles)
